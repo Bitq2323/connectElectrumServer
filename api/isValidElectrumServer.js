@@ -1,6 +1,6 @@
 const ElectrumClient = require('electrum-client');
 
-exports.isValidElectrumServer = async (req, res) => {
+module.exports = async (req, res) => {
     const server = req.body.server; // Assuming server details are sent in the body of POST request
 
     if (!server) {
